@@ -665,7 +665,7 @@ textarea {
 }
 
 @media (max-width: 900px) {
-  /* 2 kolumny -> 1 kolumna */
+ 
   .hero__grid {
     grid-template-columns: 1fr;
   }
@@ -681,7 +681,7 @@ textarea {
     gap: 1.5rem;
   }
 
-  /* mockupy: na mobile tylko MAIN, telefon znika */
+ 
   .mockup--secondary {
     display: none !important;
   }
@@ -722,15 +722,14 @@ textarea {
   }
 }
 
-/* === MOBILE: REMOVE PHONE MOCKUP COMPLETELY === */
+
 @media (max-width: 900px) {
-  /* wywalamy mobile mockup */
+  
   .mockup--secondary,
   .mockup.is-secondary {
     display: none !important;
   }
 
-  /* zostaje tylko desktop preview */
   .mockup--main,
   .mockup.is-main {
     position: static !important;
@@ -741,13 +740,13 @@ textarea {
     display: block;
   }
 
-  /* kontener nie trzyma wysokości pod overlay */
+  
   .preview-mockups {
     min-height: auto;
     overflow: visible;
   }
 
-  /* karta znika na mobile (czystszy look) */
+  
   .preview {
     background: transparent;
     border: none;
