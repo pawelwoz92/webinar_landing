@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClientFlow Live — Portfolio Landing</title>
+  <meta name="description" content="Portfolio demo landing page focused on client acquisition: clear offer, outcomes, agenda, and contact." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='30%25' cy='30%25'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='1' stop-color='%233b82f6'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='28' fill='url(%23g)'/%3E%3Cpath d='M20 35l7 7 17-20' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.refactored.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="wrap header__inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand__badge" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M4 12a8 8 0 0 1 14-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M18 7v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">ClientFlow Live</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#problem">Problem</a>
+        <a href="#learn">Learn</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__ctas">
+        <a class="btn btn--primary" href="#signup">Save your seat</a>
+        <button class="btn btn--ghost" id="buyBtn" type="button">Get access</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title">Most businesses don’t have a skill problem.<br/>They have a client flow problem.</h1>
+          <p class="hero__lead">
+            Live workshop for freelancers & small business owners who want predictable enquiries
+            without ads, cold calls, or “posting every day and praying”.
+          </p>
+
+          <div class="pills" aria-label="Event highlights">
+            <span class="pill">Live · Online</span>
+            <span class="pill">90 min + Q&amp;A</span>
+            <span class="pill">Workbook included</span>
+          </div>
+
+          <ul class="checklist">
+            <li>
+              <svg class="checklist__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              A simple offer that people instantly understand
+            </li>
+            <li>
+              <svg class="checklist__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Landing structure that generates enquiries (with examples)
+            </li>
+            <li>
+              <svg class="checklist__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              A weekly system to keep leads coming consistently
+            </li>
+          </ul>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#signup">Save your seat</a>
+            <a class="btn" href="#agenda">See agenda</a>
+          </div>
+
+          <p class="note">Portfolio demo · Checkout + email integrations shown as examples.</p>
+        </div>
+
+        <div class="preview" aria-label="Responsive preview">
+          <div class="preview__mockups">
+            <img class="mockup mockup--main" src="./images/desktop.jpg" alt="Desktop preview screenshot" />
+            <img class="mockup mockup--secondary" src="./images/mobile.jpg" alt="Mobile preview screenshot" />
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section" id="problem">
+      <div class="wrap">
+        <header class="section__header">
+          <h2 class="section__title">
+            <span class="section__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 9v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 17h.01" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+            The real problem
+          </h2>
+          <p class="section__lead">If your leads rely on referrals, your income is random.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 7h10M7 12h6M7 17h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Unclear message
+            </h3>
+            <p class="card__text">Your offer sounds like “everything for everyone”, so nobody chooses.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6 9l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              No next step
+            </h3>
+            <p class="card__text">People scroll, get confused, and leave without contacting you.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 20V10M10 20V4M16 20v-8M22 20V8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Referral dependency
+            </h3>
+            <p class="card__text">Some months are great. Some months are dead. You can’t plan.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 10V8a4 4 0 0 1 4-4h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 22l-4-4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 14v2a4 4 0 0 1-4 4H3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              The fix: one system
+            </h3>
+            <p class="card__text">One offer. One audience. One CTA. That’s how you get enquiries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn -->
+    <section class="section" id="learn">
+      <div class="wrap">
+        <header class="section__header">
+          <h2 class="section__title">
+            <span class="section__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 2l9 5-9 5-9-5 9-5z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M3 7v10l9 5 9-5V7" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+            What you’ll learn
+          </h2>
+          <p class="section__lead">No funnels. No jargon. Just what brings clients.</p>
+        </header>
+
+        <div class="cards cards--2">
+          <article class="card">
+            <h3 class="card__title">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Offer positioning
+            </h3>
+            <p class="card__text">What to say so the right people self-select.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="2"/>
+                <rect x="14" y="3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="2"/>
+                <rect x="3" y="14" width="18" height="7" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Landing structure
+            </h3>
+            <p class="card__text">The sections that convert — and what to remove.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="5" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 7l-10 7L2 7" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Lead capture
+            </h3>
+            <p class="card__text">How to get enquiries without being pushy.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 4v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 7l10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Weekly system
+            </h3>
+            <p class="card__text">Simple weekly actions to keep leads coming.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="section" id="outcomes">
+      <div class="wrap">
+        <header class="section__header">
+          <h2 class="section__title">
+            <span class="section__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 19V10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 19V5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 19v-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 19V8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            Outcomes (example)
+          </h2>
+          <p class="section__lead">Illustrative metrics (not claims) to show the impact of clarity + follow-up.</p>
+        </header>
+
+        <div class="charts">
+          <article class="chart">
+            <h3 class="chart__title">Before</h3>
+            <p class="note">Confusing offer, slow follow‑up, random leads.</p>
+
+            <div class="metric">
+              <span class="metric__label">Offer clarity</span>
+              <div class="bar"><div class="bar__fill" style="width:35%"></div></div>
+              <span class="metric__value">3.5/10</span>
+            </div>
+
+            <div class="metric">
+              <span class="metric__label">Enquiries / week</span>
+              <div class="bar"><div class="bar__fill" style="width:22%"></div></div>
+              <span class="metric__value">1–2</span>
+            </div>
+
+            <div class="metric">
+              <span class="metric__label">Follow‑up speed</span>
+              <div class="bar"><div class="bar__fill" style="width:25%"></div></div>
+              <span class="metric__value">48h</span>
+            </div>
+          </article>
+
+          <article class="chart chart--after">
+            <h3 class="chart__title">After</h3>
+            <p class="note">Clear message, strong CTA, consistent weekly actions.</p>
+
+            <div class="metric">
+              <span class="metric__label">Offer clarity</span>
+              <div class="bar"><div class="bar__fill" style="width:80%"></div></div>
+              <span class="metric__value">8/10</span>
+            </div>
+
+            <div class="metric">
+              <span class="metric__label">Enquiries / week</span>
+              <div class="bar"><div class="bar__fill" style="width:68%"></div></div>
+              <span class="metric__value">5–7</span>
+            </div>
+
+            <div class="metric">
+              <span class="metric__label">Follow‑up speed</span>
+              <div class="bar"><div class="bar__fill" style="width:75%"></div></div>
+              <span class="metric__value">&lt; 12h</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agenda -->
+    <section class="section" id="agenda">
+      <div class="wrap">
+        <header class="section__header">
+          <h2 class="section__title">
+            <span class="section__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M7 3v3M17 3v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 7h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <rect x="4" y="5" width="16" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+            Agenda
+          </h2>
+          <p class="section__lead">90 minutes, zero fluff.</p>
+        </header>
+
+        <div class="agenda">
+          <div class="agenda__row"><span class="agenda__time">0–10</span><span>Why most websites don’t convert (even with traffic)</span></div>
+          <div class="agenda__row"><span class="agenda__time">10–30</span><span>The “One Offer” framework (positioning that sells itself)</span></div>
+          <div class="agenda__row"><span class="agenda__time">30–55</span><span>The exact page layout that turns visitors into enquiries</span></div>
+          <div class="agenda__row"><span class="agenda__time">55–75</span><span>Follow‑up system: what to do after a lead comes in</span></div>
+          <div class="agenda__row"><span class="agenda__time">75–90</span><span>Live Q&amp;A + quick fixes for real offers</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup (2 columns) -->
+    <section class="section" id="signup">
+      <div class="wrap two-col">
+        <div class="two-col__main">
+          <header class="section__header">
+            <h2 class="section__title">
+              <span class="section__icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="4" y="5" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <path d="M7 11h10M7 15h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              Save your seat
+            </h2>
+            <p class="section__lead">Get the workbook + live session access (demo).</p>
+          </header>
+
+          <form class="form" id="signupForm">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+            </div>
+
+            <button class="btn btn--primary" type="submit">Save your seat</button>
+            <p class="note">Demo: form not connected (Formspree/Netlify Forms).</p>
+          </form>
+        </div>
+
+        <aside class="two-col__side">
+          <h3 class="side__title">You’ll get</h3>
+          <ul class="side__list">
+            <li><span class="side__dot"></span> Workbook (PDF)</li>
+            <li><span class="side__dot"></span> Templates + examples</li>
+            <li><span class="side__dot"></span> Q&amp;A at the end</li>
+          </ul>
+          <p class="note">Keep this honest: “example content” is fine in portfolio.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <header class="section__header">
+          <h2 class="section__title">
+            <span class="section__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 18h.01" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M9.5 9a2.5 2.5 0 1 1 3.8 2.2c-.9.5-1.3 1-1.3 2.3v.5"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+            FAQ
+          </h2>
+        </header>
+
+        <div class="faq">
+          <details>
+            <summary>Is it live or recorded?</summary>
+            <p>Live. A recording can be available afterwards (demo copy).</p>
+          </details>
+          <details>
+            <summary>Who is this for?</summary>
+            <p>Freelancers, consultants, coaches, and local service businesses.</p>
+          </details>
+          <details>
+            <summary>Do I need marketing experience?</summary>
+            <p>No. This is business-first, not technical.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (2 columns) -->
+    <section class="section" id="contact">
+      <div class="wrap two-col">
+        <div class="two-col__main">
+          <header class="section__header">
+            <h2 class="section__title">
+              <span class="section__icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="2" y="5" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <path d="M22 7l-10 7L2 7" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              Contact
+            </h2>
+            <p class="section__lead">Ask a question before signing up (demo).</p>
+          </header>
+
+          <form class="form" id="contactForm">
+            <div class="field">
+              <label for="cname">Name</label>
+              <input id="cname" name="cname" type="text" autocomplete="name" required placeholder="Your name" />
+            </div>
+
+            <div class="field">
+              <label for="cemail">Email</label>
+              <input id="cemail" name="cemail" type="email" autocomplete="email" required placeholder="you@example.com" />
+            </div>
+
+            <div class="field">
+              <label for="cmsg">Message</label>
+              <textarea id="cmsg" name="cmsg" rows="5" required placeholder="Your message…"></textarea>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <p class="note">Demo: would connect to email provider.</p>
+          </form>
+        </div>
+
+        <aside class="two-col__side">
+          <h3 class="side__title">What happens next?</h3>
+          <ul class="side__list">
+            <li><span class="side__dot"></span> I read it personally</li>
+            <li><span class="side__dot"></span> Reply within 24h (demo)</li>
+            <li><span class="side__dot"></span> Clear next steps — no pressure</li>
+          </ul>
+          <p class="note">Mobile-friendly layout: form stays readable and centered.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <span>© <span id="year"></span> ClientFlow Live — portfolio demo</span>
+        <a class="footer__link" href="#hero">Top</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scroll to top (desktop only via CSS) -->
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <!-- Mobile sticky CTA -->
+  <a class="mobile-cta btn btn--primary" href="#signup">Save your seat</a>
+
+  <script src="script.refactored.js"></script>
+</body>
+</html>
