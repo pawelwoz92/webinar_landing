@@ -288,7 +288,7 @@ img {
   position: absolute;
   height: auto;
   border-radius: 18px;
-  cursor: pointer;
+ 
   transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
 }
 
